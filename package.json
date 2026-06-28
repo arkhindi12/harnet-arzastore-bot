@@ -1,0 +1,34 @@
+{
+  "name": "fb-auto-comment",
+  "version": "1.0.0",
+  "description": "SaaS Auto Comment Facebook Multi-Akun",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "concurrently \"node server/index.js\" \"cd client && npm run dev\"",
+    "dev": "concurrently \"nodemon server/index.js\" \"cd client && npm run dev\"",
+    "build": "cd client && npm run build",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm run dev"
+  },
+  "dependencies": {
+    "axios": "^1.15.2",
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^9.6.0",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.6",
+    "express": "^4.22.1",
+    "express-rate-limit": "^7.5.0",
+    "express-session": "^1.19.0",
+    "https-proxy-agent": "^9.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "midtrans-client": "^1.4.3",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "nodemon": "^3.1.14",
+    "patchright": "^1.59.4",
+    "playwright": "^1.60.0",
+    "socks-proxy-agent": "^10.0.0",
+    "uuid": "^9.0.1",
+    "ws": "^8.21.0"
+  }
+}

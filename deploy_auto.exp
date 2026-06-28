@@ -1,0 +1,58 @@
+#!/usr/bin/expect -f
+# Auto deploy dengan password otomatis
+
+set timeout 600
+set password "UPM-ULq-F6s-2ZK"
+set host "43.133.136.244"
+set user "ubuntu"
+set path "/www/wwwroot/bot.arzastore.com"
+
+puts "🚀 Deploying ArzaBot..."
+
+# Step 1: rsync upload
+puts "📦 Uploading files..."
+spawn rsync -avz --progress \
+  --exclude node_modules \
+  --exclude .git \
+  --exclude client/node_modules \
+  --exclude data/app.db \
+  --exclude data/uploads \
+  --exclude tmp_* \
+  -e ssh ./ $user@$host:$path/
+
+expect {
+  "yes/no" { send "yes\r"; exp_continue }
+  "password:" { send "$password\r" }
+}
+expect eof
+puts "✅ Upload done"
+
+# Step 2: SSH setup
+puts "⚙️ Setting up on VPS..."
+spawn ssh $user@$host
+
+expect {
+  "yes/no" { send "yes\r"; exp_continue }
+  "password:" { send "$password\r" }
+}
+
+expect "$ "
+send "cd /www/wwwroot/bot.arzastore.com && bash -c '\
+if ! command -v node &> /dev/null; then curl -fsSL https://deb.nodesource.com/setup_20.x | sudo bash - && sudo apt install -y nodejs; fi && \
+npm install --production && \
+cd client && npm install && npm run build && cd .. && \
+npx patchright install chromium 2>/dev/null; \
+mkdir -p data/uploads && \
+if [ ! -f .env ]; then echo \"PORT=3001\nJWT_SECRET=arzabot-$(openssl rand -hex 16)\nBROWSER_MAX_CONCURRENT=3\nNODE_ENV=production\" > .env; fi && \
+sudo npm install -g pm2 2>/dev/null; \
+pm2 stop arzabot 2>/dev/null; pm2 delete arzabot 2>/dev/null; \
+pm2 start server/index.js --name arzabot && pm2 save && \
+echo DEPLOY_DONE'\r"
+
+expect "DEPLOY_DONE"
+send "pm2 status\r"
+expect "$ "
+send "exit\r"
+expect eof
+
+puts "\n🎉 Deploy selesai! Buka http://43.133.136.244:3001"

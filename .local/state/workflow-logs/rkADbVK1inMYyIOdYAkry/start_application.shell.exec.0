@@ -1,0 +1,65 @@
+
+> fb-auto-comment@1.0.0 dev
+> concurrently "nodemon server/index.js" "cd client && npm run dev"
+
+[1G[0K[0m[0][0m [33m[nodemon] 3.1.14[39m
+[0m[0][0m [33m[nodemon] to restart at any time, enter `rs`[39m
+[0m[0][0m [33m[nodemon] watching path(s): *.*[39m
+[0m[0][0m [33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[0m[0][0m [32m[nodemon] starting `node server/index.js`[39m
+[0m[1][0m 
+[0m[1][0m > fb-auto-comment-client@1.0.0 dev
+[0m[1][0m > vite
+[0m[1][0m 
+[0m[0][0m [32m[nodemon] restarting due to changes...[39m
+[0m[1][0m 
+[0m[1][0m   [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m264[22m[2m[0m ms[22m
+[0m[1][0m 
+[0m[1][0m   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5000[22m/[39m
+[0m[1][0m   [32m➜[39m  [1mNetwork[22m: [36mhttp://172.31.81.130:[1m5000[22m/[39m
+[0m[0][0m [32m[nodemon] starting `node server/index.js`[39m
+[0m[0][0m [32m[nodemon] restarting due to changes...[39m
+[0m[0][0m [32m[nodemon] starting `node server/index.js`[39m
+[0m[0][0m ✅ Server berjalan di port 3001
+[0m[0][0m [32m[nodemon] restarting due to changes...[39m
+[0m[0][0m [32m[nodemon] starting `node server/index.js`[39m
+[0m[0][0m ✅ Server berjalan di port 3001
+[0m[0][0m [32m[nodemon] restarting due to changes...[39m
+[0m[0][0m [32m[nodemon] starting `node server/index.js`[39m
+[0m[1][0m [2m6:17:40 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/accounts[39m
+[0m[1][0m Error: socket hang up
+[0m[1][0m     at Socket.socketOnEnd (node:_http_client:528:25)
+[0m[1][0m     at Socket.emit (node:events:536:35)
+[0m[1][0m     at endReadableNT (node:internal/streams/readable:1698:12)
+[0m[1][0m     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[0m[0][0m ✅ Server berjalan di port 3001
+[0m[0][0m [32m[nodemon] restarting due to changes...[39m
+[0m[0][0m [32m[nodemon] starting `node server/index.js`[39m
+[0m[0][0m ✅ Server berjalan di port 3001
+[0m[0][0m [32m[nodemon] restarting due to changes...[39m
+[0m[1][0m [2m6:17:54 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/accounts[39m
+[0m[1][0m Error: socket hang up
+[0m[1][0m     at Socket.socketOnEnd (node:_http_client:528:25)
+[0m[1][0m     at Socket.emit (node:events:536:35)
+[0m[1][0m     at endReadableNT (node:internal/streams/readable:1698:12)
+[0m[1][0m     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[0m[0][0m [32m[nodemon] starting `node server/index.js`[39m
+[0m[0][0m ✅ Server berjalan di port 3001
+[0m[0][0m [32m[nodemon] restarting due to changes...[39m
+[0m[0][0m [32m[nodemon] starting `node server/index.js`[39m
+[0m[0][0m ✅ Server berjalan di port 3001
+[0m[0][0m [32m[nodemon] restarting due to changes...[39m
+[0m[0][0m [32m[nodemon] starting `node server/index.js`[39m
+[0m[0][0m ✅ Server berjalan di port 3001
+[0m[0][0m [32m[nodemon] restarting due to changes...[39m
+[0m[0][0m [32m[nodemon] starting `node server/index.js`[39m
+[0m[0][0m ✅ Server berjalan di port 3001
+[0m[1][0m [2m6:18:51 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AccountsPage.jsx, /src/index.css[22m
+[0m[1][0m [2m6:19:04 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AccountsPage.jsx, /src/index.css[22m
+[0m[1][0m [2m6:19:59 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AccountsPage.jsx, /src/index.css[22m
+[0m[0][0m [32m[nodemon] restarting due to changes...[39m
+[0m[0][0m [32m[nodemon] starting `node server/index.js`[39m
+[0m[0][0m ✅ Server berjalan di port 3001
+[0m[0][0m [0mnodemon server/index.js exited with code SIGTERM[0m
+[0m[1][0m [0mcd client && npm run dev exited with code SIGTERM[0m
+[1G[0K⠙[1G[0K

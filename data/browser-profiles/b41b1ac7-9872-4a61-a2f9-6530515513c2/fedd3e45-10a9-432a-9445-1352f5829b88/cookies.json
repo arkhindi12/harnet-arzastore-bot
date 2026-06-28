@@ -1,0 +1,92 @@
+[
+  {
+    "name": "ps_l",
+    "value": "1",
+    "domain": ".facebook.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "datr",
+    "value": "Ht7sZylz6pY2vAFltAMAgI4p",
+    "domain": ".facebook.com",
+    "path": "/",
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "fr",
+    "value": "1WTk4BLGPVAtPWwDr.AWdiGxkasdbnDC18-_XoQTfGA01Rn4_x3qgrYf4aQHxvzp7wOiw.BqKgJI..AAA.0.0.BqKgJI.AWcqZecWSypqVSTw-tCHOJZC9Ag",
+    "domain": ".facebook.com",
+    "path": "/",
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "rd_challenge",
+    "value": "Q_6hBQNVHxItaIje1o_09lm2drGycJ9KjvcYoiVXPOf7ID0k2QCKE08RJf-whFHnJy6UJMj5hv5Nmlelf-V0UUNWQVUlaTY",
+    "domain": ".facebook.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "xs",
+    "value": "26%3AOYkRoWiKxT8LGg%3A2%3A1781137988%3A-1%3A-1%3A%3AAczSuq74WMehfmAnTkwf3Yp96iKpdYGic0u-H8kwOQ",
+    "domain": ".facebook.com",
+    "path": "/",
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "c_user",
+    "value": "100001570667452",
+    "domain": ".facebook.com",
+    "path": "/",
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "presence",
+    "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1781137995058%2C%22v%22%3A1%7D",
+    "domain": ".facebook.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "ps_n",
+    "value": "1",
+    "domain": ".facebook.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "sb",
+    "value": "prX-aSOf8DsAGAddwZXrX5zr",
+    "domain": ".facebook.com",
+    "path": "/",
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "wd",
+    "value": "1440x703",
+    "domain": ".facebook.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  }
+]
